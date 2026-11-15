@@ -116,7 +116,10 @@ export const ChromaGrid = ({
   const settingsRef = useRef(null);
   const placeRef = useRef(null);
   const data = items?.length ? items : DEFAULT_ITEMS;
-  settingsRef.current = { damping, fadeOut, spotlight: reveal !== 'card' };
+
+  useEffect(() => {
+    settingsRef.current = { damping, fadeOut, spotlight: reveal !== 'card' };
+  }, [damping, fadeOut, reveal]);
 
   useEffect(() => {
     const root = rootRef.current;

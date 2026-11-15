@@ -52,7 +52,8 @@ function App() {
         </p>
       </header>
 
-      <section className="gallery-section">
+      <section className="gallery-section" aria-labelledby="gallery-title">
+        <h2 id="gallery-title" className="sr-only">Gallery categories</h2>
         <ChromaGrid
           items={items}
           columns={3}

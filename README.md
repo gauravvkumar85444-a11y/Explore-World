@@ -1,105 +1,52 @@
-<<<<<<< HEAD
-GitHub repository content
-origin/main
-# ✨ ChromaGrid – Personal Interests Gallery
+# Explore World
 
-A creative and interactive personal interests gallery built using **React.js**. This project showcases hobbies, favorite places, books, and interests through a beautiful ChromaGrid layout with spotlight effects and glowing accents.
+A small, responsive React gallery for exploring the things that inspire us: nature, travel, fashion, technology, food, and photography.
 
-## 🌟 Features
+The gallery uses a lightweight ChromaGrid effect to reveal color and accent details as you move across each card. Images are stored locally, so the project works without an external image service.
 
-- Interactive ChromaGrid component
-- Attractive image-based cards
-- Three-column responsive grid layout
-- Spotlight reveal effect
-- Customizable accent colors
-- Glowing border effects
-- Smooth visual animations
-- Grayscale image styling
+## Features
 
-## 🛠️ Technologies Used
+- Responsive card grid for desktop, tablet, and mobile
+- Spotlight color reveal on pointer movement
+- Reduced-motion support
+- Lazy-loaded images with descriptive alt text
+- Clean Vite + React setup
 
-- React.js
-- JavaScript
-- CSS3
-- Vite
+## Run locally
 
-## 🎨 Gallery Categories
-
-🖼️ Gallery Categories
-
-Nature Escape
-
-Wanderlust
-
-Style Diary
-
-Future Space
-
-Taste Stories
-
-Little Moments
-
-## 📂 Project Structure
-
-```text
-react_bit/
-├── public/
-│   ├── Nature.jpg
-│   ├── Fashion.jpg
-│   ├── Travel.jpg
-│   ├── Food.jpg
-│   ├── Technology.jpg
-│   └── Photography.jpg
-├── src/
-│   ├── component/
-│   │   └── ChromaGrid.jsx
-│   ├── App.jsx
-│   ├── App.css
-│   └── main.jsx
-├── package.json
-└── README.md
-```
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
+You need Node.js 20 or newer.
 
 ```bash
-git clone https://github.com/sharanyagowda2025-alt/react_bit.git
-```
-
-### 2. Navigate to the project
-
-```bash
-cd react_bit
-```
-
-### 3. Install dependencies
-
-```bash
+git clone https://github.com/vikasprajapati-01/Explore-World.git
+cd Explore-World
 npm install
-```
-
-### 4. Run the application
-
-```bash
 npm run dev
 ```
 
-### 5. Open in browser
+Open the local URL shown by Vite, usually `http://localhost:5173`.
 
-Visit `http://localhost:5173/` to view the application.
+## Other commands
 
-## 👩‍💻 Author
+```bash
+npm run lint    # Check the code
+npm run build   # Create a production build
+npm run preview # Preview the production build locally
+```
 
-**Poojitha.k**
+## Project structure
 
-GitHub: https://github.com/Poojitha1224
+```text
+public/                 Gallery images
+src/App.jsx             Gallery content and layout
+src/App.css             Page-level styles
+src/component/          Reusable ChromaGrid component
+src/index.css           Global styles
+```
 
-## 📄 License
+## Customize the gallery
 
-This project is open-source and available under the MIT License.
-=======
-# react_gallery-
-A responsive React-based image gallery featuring a collection of creative visuals, including nature, travel, fashion, technology, food, and photography. Built with React, JavaScript, and CSS, it offers an interactive ChromaGrid layout with attractive hover effects and a modern user-friendly design.
->>>>>>> 0c942425b949831aea080a5552512e411ed44088
+Update the `items` array in `src/App.jsx` to add or edit cards. Each item supports an image path, title, subtitle, and accent color.
+
+## License
+
+This project is available under the MIT License.
